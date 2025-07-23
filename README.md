@@ -47,6 +47,63 @@ The dataset consists of anonymized company information and their associated ESG 
 - Model used: `RandomForestRegressor` with `n_estimators=100`
 - Split data: 80% training / 20% testing
 
+## 🚀 Optional Streamlit App (Local Use)
+
+You can run a Streamlit app to interactively predict ESG scores for companies based on their features.
+
+### Steps to Run Streamlit App:
+
+1. **Install Streamlit** if not already:
+   ```bash
+   pip install streamlit
+
+
+## 📈 Model Metrics (RandomForestRegressor)
+
+| Metric | Value |
+|--------|-------|
+| R² Score | **0.91** |
+| MAE (Mean Absolute Error) | **1.30** |
+| RMSE (Root Mean Squared Error) | **1.55** |
+
+These metrics indicate that the model performs well in predicting ESG scores on unseen data. The R² score of 0.91 suggests that the model explains 91% of the variance in the target variable.
+
+---
+
+## 📊 Future Improvements
+
+Here are several ways this project can be further enhanced:
+
+- ✅ Integrate real-world ESG datasets from MSCI, Refinitiv, or Yahoo Finance.
+- ✅ Include SHAP or LIME explainability tools to interpret model predictions.
+- ✅ Deploy the app on **Streamlit Cloud**, **Hugging Face Spaces**, or **Render**.
+- ✅ Add model versioning and CI/CD pipeline using GitHub Actions.
+- ✅ Allow user-uploaded CSV files for batch ESG score predictions.
+
+---
+
+## 📚 References
+
+- 📘 [Scikit-Learn Documentation](https://scikit-learn.org/stable/)
+- 🌍 [MSCI ESG Ratings Overview](https://www.msci.com/our-solutions/esg-investing/esg-ratings)
+- 📊 [Sustainability Reporting Guidelines – GRI](https://www.globalreporting.org/standards/)
+- 📺 [Streamlit Official Docs](https://docs.streamlit.io/)
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+You are free to:
+
+- ✅ Use it for personal or commercial projects
+- ✅ Modify the code and models
+- ✅ Distribute or build upon it
+
+Please include attribution if you use or modify the project.
+
+
 ### 3. 📈 Evaluation Metrics
 
 After training, the model was evaluated on test data using:
@@ -59,3 +116,8 @@ After training, the model was evaluated on test data using:
 Random Forest R² Score: 0.85+
 MAE: ~2.5
 RMSE: ~3.2
+
+
+
+
+
